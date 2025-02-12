@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TESDA Immersion Experience</title>
+    <link rel="stylesheet" href="css ni tyreese.css">
+    <script defer>
+        function showModal(week) {
+            document.getElementById(week).style.display = "block";
+        }
+
+        function closeModal(week) {
+            document.getElementById(week).style.display = "none";
+        }
+    </script>
+    <style>
+        /* Modal styles */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 50%;
+            max-width: 600px;
+            margin: 10% auto;
+            text-align: center;
+            position: relative;
+        }
+
+        .close {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 24px;
+            cursor: pointer;
+        }
+
+        .modal img {
+            width: 100px;
+            height: 100px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>TESDA Immersion Experience</h1>
+         <h1>Tyreese H. Garcia</h1>
+         <h1>12-Spain</h1>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to My TESDA Immersion Journey</h2>
+        <p>This website showcases my experiences during my TESDA Region 4B immersion.</p>
+        
+    </section>
+
+    <section id="report">
+        <div class="report-content">
+            <h3>Week 1</h3>
+            <button onclick="showModal('week1Modal')">Read More</button>
+
+            <h3>Week 2</h3>
+            <button onclick="showModal('week2Modal')">Read More</button>
+        </div>
+    </section>
+
+    <!-- Modal for Week 1 -->
+    <div id="week1Modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('week1Modal')">&times;</span>
+            <h3>Week 1 Summary</h3>
+            <p>Our internship began with a flag ceremony, followed by organizing files. I spent most of the week encoding a 42-page document in Microsoft Word, which I completed on Day 4...</p>
+            <img src="picc1.jpg" alt="Week 1 Image 1">
+            <img src="picc2.jpg" alt="Week 1 Image 2">
+        </div>
+    </div>
+
+    <!-- Modal for Week 2 -->
+    <div id="week2Modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal('week2Modal')">&times;</span>
+            <h3>Week 2 Summary</h3>
+            <p>Week 2 Summary:
+
+This week focused on encoding, organizing files, and stockroom inventory. We worked as a team, celebrated Jhosua’s birthday, and wrapped up with file submission and a photo with the Regional Director.
+
+</p>
+            <img src="picc6.jpg" alt="Week 2 Image 1">
+            <img src="picc7.jpg" alt="Week 2 Image 2">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 My TESDA Experience | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
